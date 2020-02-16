@@ -10,7 +10,7 @@ pipeline
           sh 'echo my-clone-job'
          }
         }
-       {
+       
         stage('test')
          {
           steps
@@ -18,7 +18,8 @@ pipeline
             sh 'echo my-test-job'
            }
           }
-         {
+          
+         
           stage('build')
            {
             steps
@@ -27,3 +28,4 @@ pipeline
              }
             }
           }
+         }
